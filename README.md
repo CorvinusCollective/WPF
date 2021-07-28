@@ -1,2 +1,2 @@
 # WPF
-WPF Extension Libraries and Packages
+This Repository contains all Corvinus Collective projects targeted to extending WPF in .NET Core
