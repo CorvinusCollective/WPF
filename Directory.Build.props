@@ -1,0 +1,42 @@
+﻿<Project TreatAsLocalProperty="ExcludeRestorePackageImports">
+
+  <!-- Base repo layout properties -->
+  <PropertyGroup>
+    <RepoRoot>$(MSBuildThisFileDirectory)</RepoRoot>
+    <RepoBuildVersion>0.0.1.0</RepoBuildVersion>
+    <RepositoryUrl>https://github.com/Biomancer81/Corvinus/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageOutputPath>$(RepoRoot)publish\packages\$(RepoBuildVersion)</PackageOutputPath>
+    <Company>Corvinus Collective</Company>
+    <Authors>Corvinus Collective</Authors>
+    <Copyright>Copyright © $(Company) 2019. All rights reserved.</Copyright>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>NU5105</NoWarn>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/CorvinusCollective/WPF</PackageProjectUrl>
+    <PackageIcon>Corvinus-Logo.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(MSBuildProjectExtension)' != '.shproj' ">
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="$(SolutionDir)common\Corvinus-Logo.png" Visible="false">
+      <Pack>True</Pack>
+      <PackagePath>\Corvinus-Logo.png</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup Label="Common">
+    <AdditionalFiles Include="$(RepoRoot)common\stylecop.json" Link="stylecop.json" Visible="false" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoRoot)common\CodeAnalysis.Src.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+</Project>

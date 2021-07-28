@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1CED2320-68EA-40FF-A705-677D1CF88259}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{01108097-03A4-4949-B4E7-A33FCF383DAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{12471744-28F2-4D16-9383-BCF391CCD961}"
+	ProjectSection(SolutionItems) = preProject
+		common\CodeAnalysis.Src.ruleset = common\CodeAnalysis.Src.ruleset
+		common\CodeAnalysis.Test.ruleset = common\CodeAnalysis.Test.ruleset
+		common\CopyLibrary.ps1 = common\CopyLibrary.ps1
+		common\Corvinus-Logo.png = common\Corvinus-Logo.png
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.Test.props = Directory.Build.Test.props
+		common\stylecop.json = common\stylecop.json
+		common\xmldoc2md.ps1 = common\xmldoc2md.ps1
+		common\xmldoc2md.xsl = common\xmldoc2md.xsl
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corvinus.WPF.Abstractions", "src\Corvinus.WPF.Abstractions\src\Corvinus.WPF.Abstractions.csproj", "{009CD150-6323-490B-9DE3-DB7A0F3942E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corvinus.WPF.Abstractions.Test.Unit", "src\Corvinus.WPF.Abstractions\test\Corvinus.WPF.Abstractions.Test.Unit\Corvinus.WPF.Abstractions.Test.Unit.csproj", "{DB1EA168-01E5-4BF5-8589-3E2B90588787}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corvinus.WPF.Commanding", "src\Corvinus.WPF.Commanding\src\Corvinus.WPF.Commanding.csproj", "{9CAB0385-A1D9-4C30-9C05-94F6BBAEEA38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corvinus.WPF.Commanding.Test.Unit", "src\Corvinus.WPF.Commanding\test\Corvinus.WPF.Commanding.Test.Unit\Corvinus.WPF.Commanding.Test.Unit.csproj", "{1E80C44C-0CB5-4E82-A774-52C016E539C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corvinus.WPF.Common", "src\Corvinus.WPF.Common\src\Corvinus.WPF.Common.csproj", "{091E3DD4-ABBC-4991-8AC4-B8F7F5599F8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corvinus.WPF.Common.Test.Unit", "src\Corvinus.WPF.Common\test\Corvinus.WPF.Common.Test.Unit\Corvinus.WPF.Common.Test.Unit.csproj", "{5125E798-9D02-4CF4-B5E0-47E6A2DC6EF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{009CD150-6323-490B-9DE3-DB7A0F3942E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009CD150-6323-490B-9DE3-DB7A0F3942E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009CD150-6323-490B-9DE3-DB7A0F3942E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009CD150-6323-490B-9DE3-DB7A0F3942E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1EA168-01E5-4BF5-8589-3E2B90588787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1EA168-01E5-4BF5-8589-3E2B90588787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1EA168-01E5-4BF5-8589-3E2B90588787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1EA168-01E5-4BF5-8589-3E2B90588787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CAB0385-A1D9-4C30-9C05-94F6BBAEEA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CAB0385-A1D9-4C30-9C05-94F6BBAEEA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CAB0385-A1D9-4C30-9C05-94F6BBAEEA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CAB0385-A1D9-4C30-9C05-94F6BBAEEA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E80C44C-0CB5-4E82-A774-52C016E539C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E80C44C-0CB5-4E82-A774-52C016E539C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E80C44C-0CB5-4E82-A774-52C016E539C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E80C44C-0CB5-4E82-A774-52C016E539C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091E3DD4-ABBC-4991-8AC4-B8F7F5599F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091E3DD4-ABBC-4991-8AC4-B8F7F5599F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091E3DD4-ABBC-4991-8AC4-B8F7F5599F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091E3DD4-ABBC-4991-8AC4-B8F7F5599F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5125E798-9D02-4CF4-B5E0-47E6A2DC6EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5125E798-9D02-4CF4-B5E0-47E6A2DC6EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5125E798-9D02-4CF4-B5E0-47E6A2DC6EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5125E798-9D02-4CF4-B5E0-47E6A2DC6EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{009CD150-6323-490B-9DE3-DB7A0F3942E8} = {1CED2320-68EA-40FF-A705-677D1CF88259}
+		{DB1EA168-01E5-4BF5-8589-3E2B90588787} = {01108097-03A4-4949-B4E7-A33FCF383DAF}
+		{9CAB0385-A1D9-4C30-9C05-94F6BBAEEA38} = {1CED2320-68EA-40FF-A705-677D1CF88259}
+		{1E80C44C-0CB5-4E82-A774-52C016E539C8} = {01108097-03A4-4949-B4E7-A33FCF383DAF}
+		{091E3DD4-ABBC-4991-8AC4-B8F7F5599F8A} = {1CED2320-68EA-40FF-A705-677D1CF88259}
+		{5125E798-9D02-4CF4-B5E0-47E6A2DC6EF7} = {01108097-03A4-4949-B4E7-A33FCF383DAF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E050347-3663-435B-96D1-497EC572A4AF}
+	EndGlobalSection
+EndGlobal
